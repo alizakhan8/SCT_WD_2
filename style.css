@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #80ced7;
+}
+
+.container{
+    background-color: #219ebc;
+    width: 40%;
+    height: 50%;
+    min-width: 500px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 10px;
+    gap: 1rem;
+}
+
+.timer-Display{
+    width: 100%;
+    height: 60%;
+    background: #fefcfb;
+    padding: 40px 0;
+    font-family: "Roboto", sans-serif;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    border-radius: 10px;
+    z-index: 100;
+    box-shadow: 0 0 2rem rgb(136, 136, 136);
+}
+
+.laps{
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.buttons{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+.buttons button{
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #141313;
+    border: none;
+    font-family:  "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttons button:hover{
+    background-color:#141313 ;
+    color: #ffffff;
+    padding: 7px 17px;
+} 
+
+
+.scroll {
+    overflow-y: scroll;
+}
+
+.scroll::-webkit-scrollbar{
+    display: none;
+}
